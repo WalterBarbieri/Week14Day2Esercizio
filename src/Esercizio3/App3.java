@@ -34,12 +34,16 @@ public class App3 {
 
 		contacts.remove("Qua");
 
+		System.out.println("Il numero dell'utente selezionato è: " + contacts.get("Pippo"));
+		System.out.println("Il nome del numero selezionato è: " + Contatti.getNamebyPhone(contacts, 333555555));
+
 		System.out.println(contacts.toString());
 
 		Collection<Contatti> contactValues = contacts.values();
 		for (Contatti contatto : contactValues) {
 			System.out.println(contatto);
 		}
+
 	}
 
 }

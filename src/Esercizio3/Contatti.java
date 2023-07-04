@@ -1,5 +1,7 @@
 package Esercizio3;
 
+import java.util.Map;
+
 public class Contatti {
 //	String name;
 	int phoneNumber;
@@ -47,6 +49,15 @@ public class Contatti {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return " Phone Number: " + getPhoneNumb();
+	}
+
+	public static String getNamebyPhone(Map<String, Contatti> contacts, int phoneNumber) {
+		for (Map.Entry<String, Contatti> entry : contacts.entrySet()) {
+			if (entry.getValue().getPhoneNumb() == phoneNumber) {
+				return entry.getKey();
+			}
+		}
+		return null;
 	}
 
 }
