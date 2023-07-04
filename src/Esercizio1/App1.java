@@ -29,7 +29,7 @@ public class App1 {
 			myScanner.close();
 		}
 
-		System.out.println(wordSet.size());
+		System.out.println("Numero parole distinte: " + wordSet.size());
 		System.out.println(wordSet);
 
 	}

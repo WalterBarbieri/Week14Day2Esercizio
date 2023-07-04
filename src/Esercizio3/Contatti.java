@@ -1,23 +1,26 @@
 package Esercizio3;
 
 public class Contatti {
-	String name;
+//	String name;
 	int phoneNumber;
-	int id;
+//	int id;
 
-	public Contatti(String name, int phoneNumber, int id) {
-		this.setName(name);
+//	public Contatti(String name, int phoneNumber, int id) {
+//		this.setName(name);
+//		this.setPhoneNumb(phoneNumber);
+//		this.setId(id);
+//	}
+	public Contatti(int phoneNumber) {
 		this.setPhoneNumb(phoneNumber);
-		this.setId(id);
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
 
 	public int getPhoneNumb() {
 		return phoneNumber;
@@ -27,11 +30,23 @@ public class Contatti {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public int getId() {
-		return id;
+//	public int getId() {
+//		return id;
+//	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+
+//	@Override
+//	public String toString() {
+//		// TODO Auto-generated method stub
+//		return "Name: " + getName() + " Phone Number: " + getPhoneNumb();
+//	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return " Phone Number: " + getPhoneNumb();
 	}
 
-	public void setId(int id) {
-		this.id = id;
-	}
 }
